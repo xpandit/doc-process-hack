@@ -37,7 +37,7 @@ Before you start, please fork this repository to your GitHub account by clicking
 ## Resource Deployment Guide
 The first step on this hackathon will be to create the resources we will use throughout the day. Clicking on button bellow will redirect you to the Azure portal to deploy the resources using the [ARM template](iac) provided in this repository.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmartaldsantos%2Fdoc-process-hack%2Fmain%2FChallenge1%2Fiac%2Fazuredeploy.json)
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fxpandit%2Fdoc-process-hack%2Fmain%2FChallenge1%2Fiac%2Fazuredeploy.json)
 
 **NOTE:** Deployment may fail if the resource provider `Microsoft.AlertsManagement` is not registered in your. Follow the [documentation](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resource-providers-and-types#register-resource-provider-1) to register it and the re-run the deployment.
 
@@ -71,6 +71,8 @@ cd Challenge1
 ```
 
 This script will connect to Azure and fetch the necessary keys and populate the `.env` file with the required values in the root directory of the repository. If needed, script will prompt you to sign in to your Azure account.
+
+When connecting to Azure, you will be asked to choose which subscription to use. If you have multiple subscriptions, you can choose the one that contains the resources you want to use - CX Hackathon.
 
 ## Verify `.env` setup
 

@@ -13,7 +13,7 @@
       "type": "string",
       "defaultValue": "swedencentral",
       "allowedValues": [
-        "swedencentral"
+        "westeurope","swedencentral"
       ],
       "metadata": {
         "description": "Azure location where resources should be deployed (e.g., swedencentral)"
@@ -23,7 +23,7 @@
       "type": "string",
       "defaultValue": "westeurope",
       "allowedValues": [
-        "westeurope"
+        "westeurope","swedencentral"
       ],
       "metadata": {
         "description": "Azure location where Azure Document Intelligence should be deployed (e.g., westeurope)"
@@ -265,7 +265,7 @@
         "model": {
           "format": "OpenAI",
           "name": "gpt-4o",
-          "version": "2024-08-06"
+          "version": "2024-11-20"
         }
       },
       "sku": {
