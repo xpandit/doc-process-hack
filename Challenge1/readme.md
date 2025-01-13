@@ -1,5 +1,5 @@
 
-## 1. Enviornment Creation and Resources Deployment
+## 1. Environment Creation and Resources Deployment
 
 **Expected Duration:** 30 minutes
 

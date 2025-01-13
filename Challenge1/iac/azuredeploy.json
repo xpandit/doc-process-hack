@@ -259,7 +259,7 @@
     },
     {
       "type": "Microsoft.CognitiveServices/accounts/deployments",
-      "apiVersion": "2023-05-01",
+      "apiVersion": "2024-06-01-preview",
       "name": "[format('{0}/{1}', variables('aiCognitiveServicesName'), 'gpt-4o')]",
       "properties": {
         "model": {
@@ -270,7 +270,7 @@
       },
       "sku": {
         "name": "GlobalStandard",
-        "capacity": 100
+        "capacity": 10
       },
       "dependsOn": [
         "[resourceId('Microsoft.CognitiveServices/accounts', variables('aiCognitiveServicesName'))]"
@@ -278,7 +278,7 @@
     },
     {
       "type": "Microsoft.CognitiveServices/accounts",
-      "apiVersion": "2023-05-01",
+      "apiVersion": "2024-06-01-preview",
       "name": "[variables('documentIntelligenceName')]",
       "location": "[parameters('locationDocumentIntelligence')]",
       "sku": {
