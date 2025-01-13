@@ -161,8 +161,8 @@
       "name": "[variables('functionHostingPlanName')]",
       "location": "[parameters('location')]",
       "sku": {
-        "name": "Y1",
-        "tier": "Dynamic"
+        "name": "B1",
+        "tier": "Basic"
       },
       "properties": {
         "reserved": true
