@@ -159,7 +159,7 @@
       "type": "Microsoft.Web/serverfarms",
       "apiVersion": "2022-09-01",
       "name": "[variables('functionHostingPlanName')]",
-      "location": "[parameters('location')]",
+      "location": "[parameters('locationDocumentIntelligence')]",
       "sku": {
         "name": "B1",
         "tier": "Basic"
@@ -172,7 +172,7 @@
       "type": "Microsoft.Web/sites",
       "apiVersion": "2022-09-01",
       "name": "[variables('functionAppName')]",
-      "location": "[parameters('location')]",
+      "location": "[parameters('locationDocumentIntelligence')]",
       "kind": "functionapp",
       "properties": {
         "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', variables('functionHostingPlanName'))]",
@@ -225,7 +225,7 @@
       "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
       "apiVersion": "2022-01-31-preview",
       "name": "[variables('functionAppIdentityName')]",
-      "location": "northeurope"
+      "location": "[parameters('locationDocumentIntelligence')]"
     },
     {
       "type": "Microsoft.Authorization/roleAssignments",
