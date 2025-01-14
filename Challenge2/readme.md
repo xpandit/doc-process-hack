@@ -64,7 +64,7 @@ Let's now add our documents.
    
 ![image](https://github.com/user-attachments/assets/44f9fca5-629a-46c8-bcb7-bb5e998bda43)
 
-Select the `paystubjanesmith.pdf`file and load it into the portal. 
+Select the [`paystubjanesmith.pdf`](https://github.com/xpandit/doc-process-hack/raw/5c95925f21e93d7b0f743f1b443394f079a3ec50/Challenge2/data/paystubs/paystubjanesmith.pdf) file and load it into the portal. 
 
 8. Click on `Run Analysis`.
 9. Your screen should look similar to:

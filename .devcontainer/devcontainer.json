@@ -32,7 +32,8 @@
 				"Azurite.azurite",
 				"ms-azuretools.vscode-azurestorage",
 				"ms-azuretools.vscode-bicep",
-				"ms-vscode.azure-account"
+				"ms-vscode.azure-account",
+				"ms-toolsai.jupyter"
 			],
 			"settings": {
 				"workbench.colorTheme": "Copilot Theme"	
