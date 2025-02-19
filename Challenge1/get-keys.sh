@@ -16,7 +16,7 @@ user=""
 # Parse named parameters
 while [[ "$#" -gt 0 ]]; do
     case $1 in
-        --user-number) user="$2"; shift ;;
+        --user) user="$2"; shift ;;
         *) echo "Unknown parameter passed: $1"; exit 1 ;;
     esac
     shift

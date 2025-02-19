@@ -39,21 +39,17 @@ To open GitHub Codespaces, click on the button below:
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/)
 
-Please select your forked repository from the dropdown and, if necessary, adjust other settings of GitHub Codespace.
+Please select your forked repository from the dropdown and,\ if necessary, adjust other settings of GitHub Codespace.
 
 **NOTE:** If GitHub Codespaces is not enabled in your organization, you can enable it by following the instructions [here](https://docs.github.com/en/codespaces/managing-codespaces-for-your-organization/enabling-or-disabling-github-codespaces-for-your-organization), or, if you cannot change your GitHub organization's settings, create free personal GitHub account [here](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home).
 
 ## Verify your resources' creation
 
-Go back to your `Azure Portal` and find your `Resource Group`that should by now contain 9 resources and look like this:
-
-![image](https://github.com/user-attachments/assets/e04298dd-a601-47a2-8fda-bd0cac19f313)
-
-After deploying the resources, you will need to configure the environment variables in the `.env` file. The `.env` file is a configuration file that contains the environment variables for the application. The `.env` file is automatically created running the following command within the terminal in your Codespace:
+You will need to configure the environment variables in the `.env` file. The `.env` file is a configuration file that contains the environment variables for the application. The `.env` file is automatically created running the following command within the terminal in your Codespace:
 
 ```bash
 cd Challenge1
-./get-keys.sh --resource-group <resource-group-name>
+./get-keys.sh --user <user-number>
 ```
 
 
@@ -78,7 +74,7 @@ By reaching this section you should have every resource and installed the requir
 In the next challenges, you will use these services to build a strong document processing workflow.
 
 
-## Resource Deployment Guide
+## Resource Deployment Guide - NOT NEEDED FOR THE HACKATHON
 ### Try it in your own Azure account - after the hackathon
 The first step on this hackathon will be to create the resources we will use throughout the day. Clicking on button bellow will redirect you to the Azure portal to deploy the resources using the [ARM template](iac) provided in this repository.
 
