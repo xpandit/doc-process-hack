@@ -1,6 +1,6 @@
 # Challenge 06: Personalized Loan & Insurance Offer Agent
 
-**Expected Duration:** 90 minutes
+**Expected Duration:** 30 minutes
 
 ---
 
