@@ -1,10 +1,10 @@
 
 ## 1. Environment Creation and Resources Deployment
 
-**Expected Duration:** 30 minutes
+**Expected Duration:** 5 minutes
 
 ## Introduction
-Your goal in this challenge is to create the services necessary to conduct this hackathon. You will deploy the required resources in Azure, including the Azure AI services that will be used in the subsequent challenges. By completing this challenge, you will set up the foundation for the rest of the hackathon.
+Your goal in this challenge is to review access to the resources and get their keys to conduct this hackathon. The resources are already deployed in Azure, including the Azure AI services that will be used in the subsequent challenges. By completing this challenge, you will set up the foundation for the rest of the hackathon.
 
 ## Introduction to the services
 
@@ -25,25 +25,11 @@ An [Azure Storage Account](https://learn.microsoft.com/en-us/azure/storage/commo
 
 [Azure Cosmos DB](https://azure.microsoft.com/en-us/products/cosmos-db/#Features) is a globally distributed, multi-model database service provided by Microsoft Azure. It is designed to provide low latency, elastic scalability of throughput, well-defined semantics for data consistency, and high availability. Azure Cosmos DB supports multiple data models including key-value, documents, graphs, and columnar. It is a good choice for any serverless application that needs low order-of-millisecond response times and needs to scale rapidly and globally.
 
-<img src="https://media.licdn.com/dms/image/D5612AQHlaIMpsaaU9Q/article-cover_image-shrink_600_2000/0/1704683403049?e=2147483647&v=beta&t=vHiU0ktWw5l6v2UlURc_wyVqh_vIujasJHm1URDDE2o" alt="Description" width="35" style="vertical-align: middle;"/> <span style="font-size:14px; font-weight:bold;">Azure Functions
-
-[Azure Functions](https://azure.microsoft.com/en-us/products/functions/?msockid=3b33a8ae1caf6af23334bc5b1dc86b9e) is a cloud service available on-demand that provides all the continually updated infrastructure and resources needed to run your applications. You focus on the code that matters most to you, in the most productive language for you, and Functions handles the rest. Functions provides serverless compute for Azure. You can use Functions to build web APIs, respond to database changes, process IoT streams, manage message queues, and more.
-
 
 ## Preparation
 
 Before you start, please fork this repository to your GitHub account by clicking the `Fork` button in the upper right corner of the repository's main screen (or follow the [documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#forking-a-repository)). This will allow you to make changes to the repository and save your progress.
 
-## Resource Deployment Guide
-The first step on this hackathon will be to create the resources we will use throughout the day. Clicking on button bellow will redirect you to the Azure portal to deploy the resources using the [ARM template](iac) provided in this repository.
-
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#view/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fxpandit%2Fdoc-process-hack%2Fmain%2FChallenge1%2Fiac%2Fazuredeploy.json)
-
-**NOTE:** Deployment may fail if the resource provider `Microsoft.AlertsManagement` is not registered in your. Follow the [documentation](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resource-providers-and-types#register-resource-provider-1) to register it and the re-run the deployment.
-
-Resource deployment can take up to 5 minutes. Once the deployment is complete, you will see the resources in your Azure portal.
-
-In the meantime, you can proceed with the next step - opening pre-configured development environment in GitHub Codespaces.
 
 ## Development Environment
 
@@ -90,3 +76,16 @@ If the file is not created, simply copy over `.env.sample` to `.env` - then popu
 By reaching this section you should have every resource and installed the requirements necessary to conduct the hackathon. You have deployed an Azure AI Document Intelligence service, an Azure Cosmos DB account, an Azure Storage Account and Azure OpenAI Service.
 
 In the next challenges, you will use these services to build a strong document processing workflow.
+
+
+## Resource Deployment Guide
+### Try it in your own Azure account - after the hackathon
+The first step on this hackathon will be to create the resources we will use throughout the day. Clicking on button bellow will redirect you to the Azure portal to deploy the resources using the [ARM template](iac) provided in this repository.
+
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#view/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fxpandit%2Fdoc-process-hack%2Fmain%2FChallenge1%2Fiac%2Fazuredeploy.json)
+
+**NOTE:** Deployment may fail if the resource provider `Microsoft.AlertsManagement` is not registered in your. Follow the [documentation](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resource-providers-and-types#register-resource-provider-1) to register it and the re-run the deployment.
+
+Resource deployment can take up to 5 minutes. Once the deployment is complete, you will see the resources in your Azure portal.
+
+In the meantime, you can proceed with the next step - opening pre-configured development environment in GitHub Codespaces.
